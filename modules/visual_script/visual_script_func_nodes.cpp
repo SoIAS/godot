@@ -1844,6 +1844,7 @@ void VisualScriptPropertyGet::set_base_type(const StringName &p_type) {
 		return;
 
 	base_type = p_type;
+	_update_cache();
 	_change_notify();
 	ports_changed_notify();
 }
